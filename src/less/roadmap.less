@@ -9,8 +9,11 @@ div.roadmap{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fcfcfc', GradientType=0 );
     min-height: 630px;
     height: auto;
+    position: relative;
     div.content{
         div.box-heading.box-heading--roadmap{
+            margin-top: 65px;
+            margin-bottom: 30px;
             h3{
                 color: @dark_blue;
             }
@@ -18,16 +21,16 @@ div.roadmap{
         div.roadmap-grid{
             width: 100%;
             height: auto;
-            div.road-map-line{
+            div.roadmap-line{
                 width: 580px;
                 height: 50px;
+                margin-bottom: 1px;
                 div.grid-block{
                     height: 100%;
-                    margin-bottom: 1px;
-                    div.grid-block--date{
+                    &.grid-block--date{
                         width: 115px;
                     }
-                    div.grid-block--checkbox{
+                    &.grid-block--checkbox{
                         width: 50px;
                         border: 1px solid @dark_blue;
                         &.grid-block--checkbox__active{
@@ -43,27 +46,37 @@ div.roadmap{
                             opacity: 0;
                         }
                     }
-                    div.grid-block--text{
+                    &.grid-block--text{
                         width: 415px;
+                        justify-content: flex-start;
+                        padding-left: 20px;
                     }
                     p{
                         color: @dark_blue;
+                        font-size: 20px;
                     }
                 }
             }
         }
         div.transparent{}
-        div.roller{
-            height: 80px;
-            button{
-                border: 1px solid @dark_blue;
-                padding: 10px 20px;
-                font-family: 'Roboto';
-                font-size: 20pt;
-                color: @dark_blue;
-                cursor: pointer;
-                text-transform: uppercase;
-            }
+    }
+    div.roller{
+        height: 80px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 30px;
+        button{
+            border: 1px solid @dark_blue;
+            padding: 10px 20px;
+            font-family: 'Roboto';
+            font-size: 16px;
+            color: @dark_blue;
+            cursor: pointer;
+            text-transform: uppercase;
+            background-color: transparent;
+            width: 190px;
         }
     }
 }

@@ -95,7 +95,7 @@ textarea, input {
 div.base{
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     position: relative;
@@ -144,15 +144,19 @@ div.logo-cryptosky{
     }
 }
 
+.hidden{
+    display: none;
+}
+
 div.box-heading{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50px;
+    height: 70px;
     div.box-heading-content{
-        width: 280px;
+        width: 310px;
         height: 100%;
         display: flex;
         flex-flow: row wrap;
@@ -160,6 +164,7 @@ div.box-heading{
         align-items: center;
         div.logo-cryptosky{
             margin-right: 20px;
+            margin-top: 10px;
         }
     }
 }

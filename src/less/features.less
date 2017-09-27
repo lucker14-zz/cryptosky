@@ -1,0 +1,55 @@
+div.features{
+    position: relative;
+    background-color: @light_grey;
+    div.content{
+        div.box-heading{
+            div.box-heading-content{
+                h3{
+                    color: #fff;
+                }
+            }
+        }
+        div.container--boxes{
+            height: auto;
+            width: 1000px;
+            height: 390px;
+            div.container--box{
+                border: 1px solid white;
+                padding: 20px;
+                align-items: flex-start;
+                width: 310px;
+                &#first{
+                    margin-top: 50px;
+                    height: 300px;
+                }
+                &#second{
+                    height: 290px;
+                }
+                &#third{
+                    height: 370px;
+                }
+                p{
+                    text-align: center;
+                }
+                a.btn{
+                    padding: 10px 40px;
+                    color: @dark_blue;
+                    font-size: 20pt;
+                    font-family: 'Roboto';
+                    font-weight: 500;
+                    cursor: pointer;
+                    background-color: @dark_blue;
+                }
+            }
+        }
+    }
+    div.bottom-faker{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 70px;
+        width: 100%;
+        background-color: @dark_grey;
+        opacity: 0.8;
+    }
+}

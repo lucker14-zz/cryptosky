@@ -1,7 +1,5 @@
 $(document).ready(function(){
-    console.log('ready')
     if (window.innerWidth < 1023) {
-        console.log('should run')
         $('.container--boxes').slick({
             'prevArrow': '',
             'nextArrow': ''
@@ -15,11 +13,6 @@ var transparent = document.querySelector('.roadmap .transparent')
 var roller = document.querySelector('.roller')
 var roadmap_grid = document.querySelector('.roadmap-grid')
 var lines = [].slice.call(document.querySelectorAll('.roadmap-line'))
-
-console.log(btn_showmore)
-console.log(transparent)
-console.log(roller)
-console.log(lines)
 
 function showAll(){
     transparent.classList.add('hidden')

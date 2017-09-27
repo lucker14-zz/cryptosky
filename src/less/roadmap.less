@@ -80,3 +80,27 @@ div.roadmap{
         }
     }
 }
+
+@media screen and (max-width: 600px){
+    div.roadmap{
+        div.content{
+            div.roadmap-grid{
+                div.roadmap-line{
+                    width: 100%;
+                    div.grid-block{ 
+                        &.grid-block--date{
+                            width: 25%;
+                        }
+                        &.grid-block--text{
+                            width: 58%;
+                            padding-left: 10px;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

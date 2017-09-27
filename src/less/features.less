@@ -79,7 +79,44 @@ div.features{
 }
 
 @media screen and (max-width: 1024px){
+    div.features{
+        div.content{
+            div.scroll-container{
+                div.container--boxes{
+                    width: 300px;
+                    div.container--box{
+                        display: flex !important;
 
+                        &#first{
+                            margin-top: 0;
+                            height: 200px;
+                        }
+                        &#second{
+                            height: 250px;
+                        }
+                        &#third{
+                            margin-top: 0;
+                            height: 230px;
+                        }
+                    }
+                }
+            }
+        }
+        div.bottom-faker{
+            bottom: 80px;
+            pointer-events: none;
+            background-color: transparent;
+            opacity: 1;
+
+            p.mobile{
+                display: block;
+                font-family: 'Roboto', sans-serif;
+                font-size: 24px;
+                font-weight: 300;
+                color: white;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 600px){

@@ -3,6 +3,8 @@ div.features{
     background-color: @light_grey;
     div.content{
         div.box-heading{
+            margin-top: 90px;
+            margin-bottom: 35px;
             div.box-heading-content{
                 h3{
                     color: #fff;
@@ -13,11 +15,14 @@ div.features{
             height: auto;
             width: 1000px;
             height: 390px;
+            flex-flow: row wrap;
+            justify-content: space-between;
             div.container--box{
                 border: 1px solid white;
                 padding: 20px;
-                align-items: flex-start;
-                width: 310px;
+                justify-content: flex-start;
+                align-items: center;
+                width: 270px;
                 &#first{
                     margin-top: 50px;
                     height: 300px;
@@ -27,18 +32,28 @@ div.features{
                 }
                 &#third{
                     height: 370px;
+                    margin-top: 20px;
                 }
                 p{
                     text-align: center;
+                    color: white;
+                    font-size: 20px;
+                }
+                h4{
+                    color: white;
+                    font-size: 20px;
                 }
                 a.btn{
                     padding: 10px 40px;
-                    color: @dark_blue;
-                    font-size: 20pt;
+                    color: @light_grey;
+                    font-size: 15px;
                     font-family: 'Roboto';
                     font-weight: 500;
                     cursor: pointer;
-                    background-color: @dark_blue;
+                    background-color: #fff;
+                    letter-spacing: 2px;
+                    text-decoration: none;
+                    text-transform: uppercase;
                 }
             }
         }
@@ -49,7 +64,7 @@ div.features{
         left: 0;
         height: 70px;
         width: 100%;
-        background-color: @dark_grey;
+        background-color: #21252b;
         opacity: 0.8;
     }
 }

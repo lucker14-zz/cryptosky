@@ -16,6 +16,7 @@ html, body {
     box-sizing: border-box;
     overflow-x: hidden;
     background-color: @dark_grey;
+    position: relative;
 }
 
 *, *:before, *:after {
@@ -64,15 +65,19 @@ textarea, input {
 }
 
 .background {
-    background-image: url('/assets/bg-full.png');
+    background-image: url('/assets/bg-full.jpg');
     width: 100%;
     height: 2019px;
+    min-height: 2019px;
     background-size: 2000px 2019px;
     background-position: center;
     background-repeat: no-repeat;
     height: auto;
     pointer-events: none;
     opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .content {
@@ -92,6 +97,8 @@ div.base{
     justify-content: center;
     align-items: center;
     width: 100%;
+    position: relative;
+    z-index: 10;
 }
 
 div.container{
@@ -129,10 +136,10 @@ div.logo-cryptosky{
     width: 104px;
     height: 14px;
     &.light{
-        background-image: url('/assets/logo-cryptosky-light.png');
+        background-image: url('/assets/cryptosky-logo-light.png');
     }
     &.dark{
-        background-image: url('/assets/logo-cryptosky-dark.png');
+        background-image: url('/assets/cryptosky-logo-dark.png');
     }
 }
 
@@ -163,9 +170,6 @@ div.box-heading{
 @import './footer.less';
 
 @media screen and (max-width: 1366px) {
-    .background {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 1065px) {

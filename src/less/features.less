@@ -15,6 +15,7 @@ div.features{
             height: auto;
             width: 1000px;
             height: 390px;
+            margin-bottom: 60px;
             flex-flow: row wrap;
             justify-content: space-between;
             div.container--box{
@@ -23,21 +24,13 @@ div.features{
                 justify-content: flex-start;
                 align-items: center;
                 width: 270px;
-                &#first{
-                    margin-top: 50px;
-                    height: 300px;
-                }
-                &#second{
-                    height: 290px;
-                }
-                &#third{
-                    height: 370px;
-                    margin-top: 20px;
-                }
+                height: 230px;
+                position: relative;
+
                 p{
                     text-align: center;
                     color: white;
-                    font-size: 20px;
+                    font-size: 18px;
                 }
                 h4{
                     color: white;
@@ -54,6 +47,17 @@ div.features{
                     letter-spacing: 2px;
                     text-decoration: none;
                     text-transform: uppercase;
+                    position: absolute;
+                    bottom: 20px;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                    &:active {
+                        opacity: 1;
+                        top: 2px;
+                    }
                 }
             }
         }
@@ -80,7 +84,6 @@ div.features{
                 width: 100%;
                 div.container--box{
                     width: 32%;
-                    justify-content: space-between;
 
                     &#first{
                         margin-top: 0;

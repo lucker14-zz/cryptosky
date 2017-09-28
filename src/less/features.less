@@ -11,54 +11,49 @@ div.features{
                 }
             }
         }
-        div.scroll-container{
+        div.container--boxes{
             height: auto;
-            width: 1050px;
+            width: 1000px;
             height: 390px;
-            div.container--boxes{
-                height: auto;
-                width: 1000px;
-                height: 390px;
-                flex-flow: row wrap;
-                justify-content: space-between;
-                div.container--box{
-                    border: 1px solid white;
-                    padding: 20px;
-                    justify-content: flex-start;
-                    align-items: center;
-                    width: 270px;
-                    &#first{
-                        margin-top: 50px;
-                        height: 300px;
-                    }
-                    &#second{
-                        height: 290px;
-                    }
-                    &#third{
-                        height: 370px;
-                        margin-top: 20px;
-                    }
-                    p{
-                        text-align: center;
-                        color: white;
-                        font-size: 20px;
-                    }
-                    h4{
-                        color: white;
-                        font-size: 20px;
-                    }
-                    a.btn{
-                        padding: 10px 40px;
-                        color: @light_grey;
-                        font-size: 15px;
-                        font-family: 'Roboto';
-                        font-weight: 500;
-                        cursor: pointer;
-                        background-color: #fff;
-                        letter-spacing: 2px;
-                        text-decoration: none;
-                        text-transform: uppercase;
-                    }
+            flex-flow: row wrap;
+            justify-content: space-between;
+            div.container--box{
+                border: 1px solid white;
+                padding: 20px;
+                justify-content: flex-start;
+                align-items: center;
+                width: 270px;
+                &#first{
+                    margin-top: 50px;
+                    height: 300px;
+                }
+                &#second{
+                    height: 290px;
+                }
+                &#third{
+                    height: 370px;
+                    margin-top: 20px;
+                }
+                p{
+                    text-align: center;
+                    color: white;
+                    font-size: 20px;
+                }
+                h4{
+                    color: white;
+                    font-size: 20px;
+                }
+                a.btn{
+                    padding: 10px 40px;
+                    color: @light_grey;
+                    font-size: 15px;
+                    font-family: 'Roboto';
+                    font-weight: 500;
+                    cursor: pointer;
+                    background-color: #fff;
+                    letter-spacing: 2px;
+                    text-decoration: none;
+                    text-transform: uppercase;
                 }
             }
         }
@@ -81,23 +76,22 @@ div.features{
 @media screen and (max-width: 1024px){
     div.features{
         div.content{
-            div.scroll-container{
-                div.container--boxes{
-                    width: 300px;
-                    div.container--box{
-                        display: flex !important;
+            div.container--boxes{
+                width: 100%;
+                div.container--box{
+                    width: 32%;
+                    justify-content: space-between;
 
-                        &#first{
-                            margin-top: 0;
-                            height: 200px;
-                        }
-                        &#second{
-                            height: 250px;
-                        }
-                        &#third{
-                            margin-top: 0;
-                            height: 230px;
-                        }
+                    &#first{
+                        margin-top: 0;
+                        height: 275px;
+                    }
+                    &#second{
+                        height: 275px;
+                    }
+                    &#third{
+                        margin-top: 0;
+                        height: 275px;
                     }
                 }
             }
@@ -109,11 +103,29 @@ div.features{
             opacity: 1;
 
             p.mobile{
-                display: block;
+                display: none;
                 font-family: 'Roboto', sans-serif;
                 font-size: 24px;
                 font-weight: 300;
                 color: white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px){
+    div.features{
+        div.content{
+            div.container--boxes{
+                flex-flow: column wrap;
+                height: auto;
+                margin-bottom: 50px;
+                max-width: 270px;
+                div.container--box{
+                    width: auto;
+                    max-width: 270px;
+                    margin-bottom: 20px;
+                }
             }
         }
     }
@@ -134,23 +146,21 @@ div.features{
                 top: 0;
                 margin-top: 40px;
             }
-            div.scroll-container{  
-                margin-top: 150px;  
-                div.container--boxes{
-                    position: relative;
-                    // left: 35%;    
-                    div.container--box{
-                        &#first{
-                            margin-top: 0;
-                            height: 200px;
-                        }
-                        &#second{
-                            height: 250px;
-                        }
-                        &#third{
-                            margin-top: 0;
-                            height: 230px;
-                        }
+            margin-top: 150px;  
+            div.container--boxes{
+                position: relative;
+                // left: 35%;    
+                div.container--box{
+                    &#first{
+                        margin-top: 0;
+                        height: 200px;
+                    }
+                    &#second{
+                        height: 250px;
+                    }
+                    &#third{
+                        margin-top: 0;
+                        height: 230px;
                     }
                 }
             }

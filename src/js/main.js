@@ -1,13 +1,3 @@
-$(document).ready(function(){
-    if (window.innerWidth < 1023) {
-        $('.container--boxes').slick({
-            'prevArrow': '',
-            'nextArrow': ''
-        });
-    }
-});
-    
-
 var btn_showmore = document.querySelector('.roller .content button')
 var transparent = document.querySelector('.roadmap .transparent')
 var roller = document.querySelector('.roller')

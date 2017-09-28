@@ -133,36 +133,12 @@ div.features{
 
 @media screen and (max-width: 600px){
     div.features{
-        height: 600px;
         div.content{
             width: 100%;
             &.content__slider{
-                position: relative;
-                overflow-y: scroll;
             }
             div.box-heading{
-                position: absolute;
-                left: 0;
-                top: 0;
                 margin-top: 40px;
-            }
-            margin-top: 150px;  
-            div.container--boxes{
-                position: relative;
-                // left: 35%;    
-                div.container--box{
-                    &#first{
-                        margin-top: 0;
-                        height: 200px;
-                    }
-                    &#second{
-                        height: 250px;
-                    }
-                    &#third{
-                        margin-top: 0;
-                        height: 230px;
-                    }
-                }
             }
         }
         div.bottom-faker{
@@ -172,7 +148,7 @@ div.features{
             opacity: 1;
 
             p.mobile{
-                display: block;
+                display: none;
                 font-family: 'Roboto', sans-serif;
                 font-size: 24px;
                 font-weight: 300;

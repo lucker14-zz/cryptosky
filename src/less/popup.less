@@ -1,0 +1,36 @@
+div.popup-bg{
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.75);
+    z-index: 80;
+    div.popup-container{
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        background-color: #fff;
+        position: relative;
+        padding: 20px;
+        div.close{
+            position: absolute;
+            right: 10px;
+            top: 9px;
+            color: #000;
+            cursor: pointer;
+        }
+        div.content{
+            min-height: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    div.popup-bg{
+        div.popup-container{
+            max-width: 90%;
+            div.content{}
+        }
+    }
+}

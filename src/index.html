@@ -26,9 +26,17 @@
     <div class="background"></div>
 
     <div class="popup-bg flex--single-center hidden disabled ">
-        <div class="popup-container flex--single-center">
+        <div class="popup-container flex--single-center hidden disabled" id="investor">
             <div class="close">&#10005;</div>
-            <div class="content flex--column-center"></div>
+            <div class="content flex--column-center">investor</div>
+        </div>
+        <div class="popup-container flex--single-center hidden disabled" id="leader">
+            <div class="close">&#10005;</div>
+            <div class="content flex--column-center">leader</div>
+        </div>
+        <div class="popup-container flex--single-center hidden disabled" id="trader">
+            <div class="close">&#10005;</div>
+            <div class="content flex--column-center">trader</div>
         </div>
     </div>
 
@@ -168,21 +176,21 @@
                         <h4>Investor</h4>
                         <p>Máte zájem o investice do kryptoměn?</p>
                     </div>
-                    <button class="btn">Kontakt</button>
+                    <button class="btn" id="investor">Kontakt</button>
                 </div>
                 <div class="container container--box" id="second">
                     <div class="text-container">
                         <h4>Leader</h4>
                         <p> Jste leader s vlastní strukturou? Nabízíme exklusivní Compensation plan.</p>
                     </div>
-                    <button class="btn">Kontakt</button>
+                    <button class="btn" id="leader">Kontakt</button>
                 </div>
                 <div class="container container--box" id="third">
                     <div class="text-container">
                         <h4>Trader</h4>
                         <p>Jste zkušený trader a zaměřujete se na kryptoměny? </p>
                     </div>
-                    <button class="btn">Kontakt</button>
+                    <button class="btn" id="trader">Kontakt</button>
                 </div>
             </div>
         </div>
